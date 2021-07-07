@@ -1,0 +1,9 @@
+<?php
+	$connection = new mysqli('localhost','root','','clients');
+
+	$DeleteQuery=$connection->query("Delete FROM clients WHERE id ='$_GET[id]'");
+
+
+
+
+?>

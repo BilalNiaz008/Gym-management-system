@@ -1,0 +1,325 @@
+/*Css Part Starts */
+body{
+  font-family: 'Poppins';
+  height: auto;
+}
+.top{
+  background: orange;
+}
+.contain{
+  width: 100%;
+  height: 600px;
+  background-image: url('Images/Roop.jpg');
+  background-size: 100% 100%;
+  position: relative;
+  box-shadow: 1px 1px 2px black;
+}
+.nav-item{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.nav-item:hover{
+  background-color: red;
+  border-radius: 50px;
+}
+.bg{
+  transition: 1s ease;
+  background-color: transparent;
+  margin-top: 30px;
+}
+.bg.scrolled{
+  color: black;
+  background-color: darkorange;
+  margin-top: 0px;
+}
+/* the index page css  part*/
+
+.on-img{
+  height: 200px;
+  width: 70%;
+  background:lightgray;
+  position: relative;
+  margin-top: -6em;
+  box-shadow: 1px 1px 2px black;
+}
+.on-img form{
+  width: 80%;
+  height: 3.5em;
+  background-color: white;
+  border-radius: 50px;
+}
+.on-img input[type="email"]{
+  height: 3em;
+  width: 80%;
+  border-radius: 50px;
+  border: none;
+}
+.on-img input[type="submit"]{
+  height: 3em;
+  width: 17%;
+  margin-top: .2em;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(90deg, orange 0%, darkorange 35%, orange 100%);
+  box-shadow: 0px 0px 2px black;
+}
+.on-img input[type="submit"]:hover{
+  background: red;
+  border: none;
+}
+.on-img input:focus{
+  outline: none;
+  border: none;
+}
+
+.btn-warning{
+  background-color: darkorange;
+  border: none;
+}
+.btn-warning:hover{
+  background-color: red;
+  }
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 30%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+  background-color: darkorange;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  margin-top: 60px;
+  top: 50px;
+  right: 45px;
+  font-size: 60px;
+}
+.menu-btn{
+  visibility: hidden;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-width: 500px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 30px;
+    top: 15px;
+    right: 35px;
+  }
+  .menu-btn{
+    position:absolute;
+    top: 10px;
+    left: 83%;
+    visibility: visible;
+  }
+  .on-img form{
+    visibility: hidden;
+  }
+}
+.bg-why{
+  width: 100%;
+  height: auto;
+  background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8) ), url('https://images.askmen.com/1080x540/2017/06/14-033210-best_hotels_for_fitness_minded_people.jpg');
+  background-size: 100% 100%;
+}
+.footer{
+  background-color: orange;
+  color: black;
+}
+h3{
+  color: white;
+}
+
+
+/* CSS PART of lohin page*/
+.log-img{
+  height: 720px;
+  width: 100%;
+  background-image: url(Gym.jpg);
+  z-index: 0;
+  position: relative;
+}
+.login{
+  
+  background: rgb(0,12,45);
+  background: linear-gradient(90deg, rgba(0,12,45,1) 0%, rgba(9,47,121,1) 35%, rgba(9,50,103,1) 100%);
+  color: white; 
+  
+}
+.login:before{
+  content: '';
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: -10;
+  height:100%;
+  width: 100%;
+  transition: .5 ease;
+  background: rgb(79,19,6);
+  background: linear-gradient(90deg, rgba(79,19,6,1) 0%, rgba(198,75,23,1) 35%, rgba(213,53,0,1) 100%);
+  transform: skew(3deg,3deg);
+  box-shadow: -1px -1px 5px black;
+}
+.login:after{
+  content: '';
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: -10;
+  height:100%;
+  width: 100%;
+  transition: .5 ease;
+  background: rgb(79,6,6);
+  background: linear-gradient(90deg, rgba(79,6,6,1) 0%, rgba(198,23,23,1) 35%, rgba(213,0,0,1) 100%);
+  transform: skew(-3deg,-3deg);
+  box-shadow: -1px -1px 5px black;
+}
+
+.login .form-group{
+
+}
+@media screen and (max-width: 500px) {
+.login{
+  width: 80%;
+  height: 20em;
+  height: 50%;
+  position: relative;
+  left: 0;
+  }
+}
+.login button:hover{
+  border-bottom:3px solid red;
+  border-top: 3px solid orange;
+  border-left: 3px solid blue;
+  border-right: 3px solid green;
+}
+
+/*CSS PART FOR THE MENU FA BARS */
+
+
+
+
+
+
+
+/* CSS Part of LOged into pages */
+    /* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 19%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: white; /* Black */
+  overflow-x: hidden; 
+  overflow-y:hidden;/* Disable horizontal scroll */
+  box-shadow: 0px 0px 10px gray;
+  transition: 1s ease;
+}
+.sidenav:hover{
+  overflow-y: hidden;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: orange;
+}
+
+/* Style page content */
+.main {
+  width: 80%;
+  height: all;
+  margin-left: 20%;
+  padding: 0px;
+  }
+.boxes{
+  height: 8em;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px gray;
+  opacity: .9;
+
+}
+.boxes:hover{
+  opacity: 1;
+  transform: translate(-2px,1px);
+}
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+.dropdown-container {
+  display: none;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.Add_Client{
+  width: 50%;
+}
+#openbtn{
+  visibility: hidden;
+}
